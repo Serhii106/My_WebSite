@@ -1,0 +1,92 @@
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* ---------- ХЕДЕР ---------- */
+header {
+    width: 100%;
+    background: #000;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+nav a:active {
+    transform: translateY(0px);
+}
+
+/* ---------- ПРОФИЛЬНЫЙ БЛОК ---------- */
+
+#Profil {
+    max-width: 800px;
+    margin: 120px auto; /* центрирование */
+    background: #2b2b2b;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    animation: fadeIn 0.8s ease;
+}
+
+#Profil #head {
+    background-color: #5fa9b8;
+    width: 100%;
+    padding: 12px 0;
+}
+
+#Profil #head h1 {
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* текст */
+#Profil p {
+    font-size: 18px;
+    color: #e3f4ff;
+    padding: 22px 30px;
+    line-height: 1.7;
+}
+
+/* ---------- АНИМАЦИЯ ---------- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
